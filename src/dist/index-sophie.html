@@ -193,73 +193,90 @@
     </div>
   </section>
 
-  
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
+<style>
+  .project-image-container {
+    height: 200px; /* adjust to your layout */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Projects</h1>
+    <hr />
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-12">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <p class="title">PromptTrack</p>
+              <figure class="project-image-container">
+                <img class="modal-trigger" data-target="project-1-modal" src="img/images/promptTrack.gif">
+              </figure>
+            </article>
           </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
-                </figure>
-              </article>
-            </div>
+          <style>
+            .project-image-container-contain {
+              height: 200px;
+              background: #fff; /* or transparent if your site has a dark theme */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 8px;
+              padding: 5px;
+            }
+
+            .project-image-container-contain img {
+              max-height: 100%;
+              max-width: 100%;
+              object-fit: contain;
+            }
+          </style>
+
+          <!-- Replace this block in your HTML -->
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <p class="title">Identity Aware Tracking</p>
+              <figure class="project-image-container-contain">
+                <img class="modal-trigger" data-target="project-2-modal" src="img/images/identity-aware/identity-aware-tracking-gif-example.gif">
+              </figure>
+            </article>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-12">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <p class="title">Spatio-Temporal Action Detection</p>
+              <figure class="project-image-container">
+                <img class="modal-trigger" data-target="project-4-modal" src="img/images/stad.gif">
+              </figure>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <p class="title">Pig Abnormal Behavior Analysis</p>
+              <figure class="project-image-container">
+                <img class="modal-trigger" data-target="project-3-modal" src="img/images/aggression-detection.gif">
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section class="section">
     <div class="container">
@@ -376,12 +393,12 @@
       </div>
       <div class="column is-half">
         <div class="box">
-          <p><strong>🏐 Qualified to junior beach Volleyball world championship </strong><br><em>As Captain, Junior National Indoor & Beach Volleyball Teams, 2018</em></p>
+          <p><strong>🏐 Qualified to junior beach Volleyball world championship </strong><br><em>As Captain, Beach Volleyball Teams, 2018</em></p>
         </div>
       </div>
        <div class="column is-half">
         <div class="box">
-          <p><strong>🥉 3rd Place – African Nations Cup</strong><br><em>As Captain, Junior National Indoor & Beach Volleyball Teams, 2018</em></p>
+          <p><strong>🥉 3rd Place – volleyball  African  Cup of Nations</strong><br><em>As Captain, Junior National Indoor Volleyball Team, 2018</em></p>
         </div>
       </div>
     </div>
@@ -438,39 +455,46 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">PromptTrack</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
         <div id="project-1-modal-carousel" class="carousel">
+
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/images/rabbit.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/images/zebbra.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/images/pig_1.gif">
           </figure>
+          
         </div>
 
         <div class="content">
+        <p>
+          <strong>PromptTrack</strong> is a flexible and powerful library for object tracking using natural language prompts. 
+          It leverages advanced models such as <strong>MDETR</strong> and <strong>OWL-ViT V2</strong> to perform robust visual grounding and identity-aware tracking, 
+          particularly in constrained or closed environments with fixed populations.
+        </p>
+        <p>
+          The project is open-source and actively maintained on GitHub. To make experimentation easier, we provide a 
+          <a href="https://colab.research.google.com/github/ngobibibnbe/PromptTrack/blob/master/test/PromptTrack_Demo.ipynb">ready-to-run Colab notebook</a> and an intuitive 
+          <a href="https://huggingface.co/spaces/SophieNgo/PromptTrack?logs=build">Gradio interface on Hugging Face</a> for visual testing — no setup required.
+        </p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Colab</span>
+          <span class="tag">Prompt-based Tracking</span>
         </div>
+      </div>
+
 
       </section>
       <footer class="modal-card-foot">
@@ -483,39 +507,41 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Identity aware tracking</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
         <div id="project-2-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/images/identity-aware/identity-aware-1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/images/identity-aware/figure_m.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/images/identity-aware/Framework_explained_1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/images/identity-aware/identity-aware-tracking.png">
           </figure>
         </div>
 
         <div class="content">
+        <p>
+          We introduce an HMM-based framework for identity-aware long-term multi-object tracking, explicitly designed to handle sparse and uncertain re-identification cues in constrained animal monitoring settings. 
+          The implementation and evaluation code is available on <a href="https://github.com/ngobibibnbe/uncertain-identity-aware-tracking" target="_blank">GitHub</a>.
+        </p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Hidden Markov Model</span>
+          <span class="tag">Multi-object Tracking</span>
+          <span class="tag">Animal Behavior</span>
+          <span class="tag">Re-ID</span>
         </div>
+      </div>
+
 
       </section>
       <footer class="modal-card-foot">
@@ -528,35 +554,39 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Behavior analysis</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-3-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/images/aggression-detection.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/images/agitation1 (1).gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/images/agitation1 (2).gif">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
+        <p>
+          We developed an unsupervised method to detect and localize abnormal behaviors in pig barns by leveraging spatio-temporal reconstruction errors from an autoencoder combined with tracking outputs. 
+          Anomalies are inferred when tracked pigs enter regions or exhibit patterns that the autoencoder fails to reconstruct reliably, allowing both spatial and temporal localization of novel activities.
+        </p>
+
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Autoencoder</span>
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Spatio-Temporal Analysis</span>
+          <span class="tag">Animal Behavior</span>
+          <span class="tag">Tracking</span>
+          <span class="tag">Unsupervised Learning</span>
         </div>
+      </div>
+
 
       </section>
       <footer class="modal-card-foot">
@@ -569,35 +599,36 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Spatio-Temporal action detection</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-4-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/images/stad.gif">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
+
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
+        <p>
+    I am building a spatio-temporal action detection pipeline by extending the InternVideo L-LVM architecture to generate action tubes and associate actions with individual entities across time. 
+    To enhance visual grounding and enable prompt-based localization, the system incorporates OWL-ViT for region-aware prompting and object-guided spatial proposals.
+  </p>
+  <p>
+    <em>Note:</em> The image featured in the carousel is adapted from  <a href="https://github.com/MVIG-SJTU/AlphAction" target="_blank">AlphaAction</a> project .
+  </p>
+
+        <div class="tags">
+          <span class="tag">InternVideo</span>
+          <span class="tag">OWL-ViT</span>
+          <span class="tag">Spatio-Temporal Detection</span>
+          <span class="tag">Vision Transformers</span>
+          <span class="tag">Action Tubes</span>
+          <span class="tag">Prompt-based Detection</span>
         </div>
+      </div>
+
 
       </section>
       <footer class="modal-card-foot">
@@ -691,8 +722,8 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <a href="https://github.com/ngobibibnbe/devfolio" target="_blank" class="icon has-text-primary">
-          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
+        <a href="https://github.com/ngobibibnbe/ngobibibnbe.github.io" target="_blank" class="icon has-text-primary">
+          <i class="fab fa-github"></i> <strong>Portfolio</strong></a>
       </p>
     </div>
   </footer>
